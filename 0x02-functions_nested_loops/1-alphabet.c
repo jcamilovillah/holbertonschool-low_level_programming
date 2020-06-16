@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * print_alphabet - uses the print_alphabet func
+ * print_alphabet - check the code for Holberton School students.
  *
- *Return: nothing
+ *Return: Always 0.
  */
 
 void print_alphabet(void)
