@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _memcpy; name function
+ * _memcpy - name function
  * @dest: pointer memory area
  * @src: pointer memory area
  * @n: bytes
@@ -16,5 +16,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[i] = src[i];
 	}
-	return (dest)
+	return (dest);
 }
