@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * _memcpy - name function
+ * _memcpy - Name function
  * @dest: pointer memory area
  * @src: pointer memory area
  * @n: bytes
- * Return : Always 0.
+ * Return: Always 0.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
