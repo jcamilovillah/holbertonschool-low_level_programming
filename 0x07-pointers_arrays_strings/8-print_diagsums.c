@@ -1,14 +1,13 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
- * print_diagsums - Entry point
- * Desc: Entry
+ *print_diagsums - function that print a sum of two diagonals.
  *@a: pointer
- *@size: value
- * Return: Always 0 (Success)
+ *@size: the size of the array
  */
-void print_diagsums(int *a, int size)
 
+void print_diagsums(int *a, int size)
 {
 	int i, j, sum1 = 0, sum2 = 0;
 
