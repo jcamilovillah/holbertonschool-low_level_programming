@@ -32,5 +32,5 @@ int raiz(int n, int i)
 		return (-1);
 	}
 	i = raiz(n, x + 1);
-	return (x);
+	return (i);
 }
