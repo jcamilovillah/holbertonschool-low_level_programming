@@ -1,15 +1,15 @@
 #include "holberton.h"
 
 /**
-* string_nconcat - check the code for Holberton School students.
-* @s1: primer string
-* @s2: segundo strign
-* @n: hasta n caracteres
+* string_nconcat - concatenates two strings.
+* @s1: 1st string
+* @s2: 2nd string
+* @n: limit
 * Return: Always 0.
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *t;
+	char *p;
 	unsigned int i, j;
 
 	if (s1 == NULL)
@@ -29,21 +29,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = j;
 	}
-	t = malloc((i + n + 1) * sizeof(char));
+	p = malloc((i + n + 1) * sizeof(char));
 
-	if (t == NULL)
+	if (p == NULL)
 	{
 		return (NULL);
 	}
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
-		t[i] = s1[i];
+		p[i] = s1[i];
 	}
 	for (j = 0; j < n; j++, i++)
 	{
-		t[i] = s2[j];
+		p[i] = s2[j];
 	}
-	t[i] = '\0';
-	return (t);
+	p[i] = '\0';
+	return (p);
 }
