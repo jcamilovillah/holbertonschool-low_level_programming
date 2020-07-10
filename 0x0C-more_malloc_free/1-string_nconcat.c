@@ -12,7 +12,6 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	/* unsigned int var because we need to compare with n */
 	char *p;
 	unsigned int i, j;
 
@@ -36,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
-		strings[i] = s1[i];
+		p[i] = s1[i];
 
 	for (j = 0; j < n; j++, i++)
 	p[i] = s2[j];
