@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 
 	va_start(charl, format);
 
-	while (format[cf] != '\0')
+	while (format != NULL && format[cf] != '\0')
 	{
 		ca = 0;
 		while (array[ca].argu != NULL)
