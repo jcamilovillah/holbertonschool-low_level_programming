@@ -7,12 +7,12 @@
  */
 size_t list_len(const list_t *h)
 {
-	unsigned int x;
+	unsigned int i;
 	const list_t *nodo = h;
 
-	for (x = 0; nodo != NULL; x++)
+	for (i = 0; nodo != NULL; i++)
 	{
 		nodo = nodo->next;
 	}
-	return (x);
+	return (i);
 }
