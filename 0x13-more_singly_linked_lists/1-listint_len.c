@@ -7,13 +7,13 @@
 
 size_t listint_len(const listint_t *h)
 {
-    int i;
-    const listint_t *nodo = h;
+	int i;
+	const listint_t *nodo = h;
 
-    for (i = 0; nodo != NULL; i++)
-    {
-        nodo = nodo->next;
-    }
+	for (i = 0; nodo != NULL; i++)
+	{
+		nodo = nodo->next;
+	}
 
-    return (i);
+	return (i);
 }
