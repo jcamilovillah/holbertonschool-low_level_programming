@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_listint2 - function that frees a listint_t list.
+ * pop_listint - delete the head node.
  * @head: first element
  * Return: void.
  */
@@ -9,6 +9,7 @@ int pop_listint(listint_t **head)
 	if (*head != NULL)
 	{
 		listint_t *aux_delete;
+
 		aux_delete = *head;
 		int f = 0;
 
