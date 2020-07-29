@@ -6,17 +6,15 @@
  */
 int pop_listint(listint_t **head)
 {
+	int f = 0;
+	listint_t *aux_delete;
+
 	if (*head != NULL)
 	{
-		listint_t *aux_delete;
-
 		aux_delete = *head;
-		int f = 0;
-
-		aux_delete = aux_delete->next;
-		free(*head);
+		*head = aux_delete->next;
 		f = aux_delete->n;
-
+		free(aux_delete);
 		return (f);
 	}
 	return (0);
