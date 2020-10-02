@@ -38,6 +38,7 @@ hash_node_t *add_nodeint(hash_node_t **h, const char *key, const char *value)
 	{
 		if (strcmp(aux->key, key) == 0)
 		{
+			free(aux->value);
 			aux->value = strdup(value);
 			return (*h);
 		}
