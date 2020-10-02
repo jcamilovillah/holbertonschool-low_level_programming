@@ -32,17 +32,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 hash_node_t *add_nodeint(hash_node_t **h, const char *key, const char *value)
 {
 	hash_node_t *new;
-    hash_node_t *aux = *h;
+	hash_node_t *aux = *h;
 
-    while (aux != NULL)
-    {
-        if (strcmp(aux->key, key) == 0)
-            {
-                aux->value = strdup(value);
-                return(*h);
-            }
-        aux = aux->next;
-    }
+	while (aux != NULL)
+	{
+		if (strcmp(aux->key, key) == 0)
+		{
+			aux->value = strdup(value);
+			return (*h);
+		}
+		aux = aux->next;
+	}
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
 	{
