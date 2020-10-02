@@ -20,11 +20,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(new_table);
 		return (NULL);
 	}
+	new_table->size = size;
+	new_table->array = new_node;
 
 	for (i = 0; i < size; i++)
 		new_node[i] = NULL;
 
-	new_table->size = size;
-	new_table->array = new_node;
+	
 	return (new_table);
 }
