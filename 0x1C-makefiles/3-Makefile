@@ -19,5 +19,4 @@ oclean:
 fclean: clean oclean
 
 .PHONY: re
-re:
-	$(CC) $(SRC)
+re: fclean all
